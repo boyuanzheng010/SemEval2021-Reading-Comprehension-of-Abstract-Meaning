@@ -20,3 +20,18 @@ Data can be treated as python dictionary objects. A simple script to read **ReCA
 >>>>>        print(instance)
 
 ```
+
+```
+def read_recam(path):
+ with open(path, mode='r') as f:
+  reader = jsonlines.Reader(f)
+  for instance in reader:
+   print(instance)
+
+```
+
+
+
+
+
+
