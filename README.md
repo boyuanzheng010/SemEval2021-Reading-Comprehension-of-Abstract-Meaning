@@ -3,7 +3,8 @@
 
 ## Data
 **Data Format**
-Format is one-question-per-line in json. See examples below for further help reading the data.
+
+Data is stored as one-question-per-line in json format. Each instance of the data can be trated as a python dictinoary objective. See examples below for further help in reading the data.
 
 
 **Sample**
@@ -19,6 +20,7 @@ Format is one-question-per-line in json. See examples below for further help rea
 "label": 3
 }
 ```
+* article - the article that provide the context for the question
 
 **Code**
 
