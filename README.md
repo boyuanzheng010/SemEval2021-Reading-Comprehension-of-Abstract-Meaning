@@ -3,31 +3,32 @@
 
 ## Data
 **Data Format**
+Format is one-question-per-line in json. See examples below for further help reading the data.
 
 
 **Sample**
-
+```
+{
+"article": "... observers have even named it after him, ``Abenomics". It is based on three key pillars -- the "three arrows" of monetary policy, fiscal stimulus and structural reforms in order to ensure long-term sustainable growth in the world's third-largest economy. In this weekend's upper house elections, ....",
+"question": "Abenomics: The @placeholder and the risks",
+"option_0": "chances",
+"option_1": "prospective",
+"option_2": "security",
+"option_3": "objectives",
+"option_4": "threats",
+"label": 3
+}
+```
 
 **Code**
 
 Data can be treated as python dictionary objects. A simple script to read **ReCAM** data is as follows:
-
-```
->def read_recam(path):
->>	with open(path, mode='r') as f:
->>>		reader = jsonlines.Reader(f)
->>>>        for instance in reader:
->>>>>        print(instance)
-
-```
-
 ```
 def read_recam(path):
     with open(path, mode='r') as f:
         reader = jsonlines.Reader(f)
         for instance in reader:
             print(instance)
-
 ```
 
 
