@@ -4,7 +4,7 @@
 ## Data
 **Data Format**
 
-Data is stored as one-question-per-line in json format. Each instance of the data can be trated as a python dictinoary objective. See examples below for further help in reading the data.
+Data is stored one-question-per-line in json format. Each instance of the data can be trated as a python dictinoary object. See examples below for further help in reading the data.
 
 
 **Sample**
@@ -20,7 +20,10 @@ Data is stored as one-question-per-line in json format. Each instance of the dat
 "label": 3
 }
 ```
-* article - the article that provide the context for the question
+* article : the article that provide the context for the question.
+* question : the question models are required to answer.
+* options : five answer options for the question. Model are required to select the true answer from 5 options.
+* label : index of the answer in options
 
 **Code**
 
