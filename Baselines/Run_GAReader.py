@@ -192,7 +192,7 @@ def main(config, model_filename):
     model.load_state_dict(torch.load(model_file))
 
     test_loss, test_acc, test_report = evaluate(
-        model, test_iterator, criterion, ['0', '1', '2', '3'])
+        model, test_iterator, criterion, ['0', '1', '2', '3', '4'])
     print("-------------- Test -------------")
     print("\t Loss: {} | Acc: {} | Macro avg F1: {} | Weighted avg F1: {}".format(
         test_loss, test_acc, test_report['macro avg']['f1-score'], test_report['weighted avg']['f1-score']))
