@@ -203,7 +203,6 @@ if __name__ == "__main__":
     model_name = "GAReader"
     data_dir = "C:/Users/Dell/Desktop/sample/multi_sample/"
     embedding_folder = "C:/Users/Dell/Desktop/mrc_data/embedding/glove/"
-
     output_dir = "./ga/output"
     cache_dir = "./ga/cache"
     log_dir = "./ga/log/"
